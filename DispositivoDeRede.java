@@ -6,7 +6,7 @@ public class DispositivoDeRede{
 	public String endereço_MAC;
 
 
-	public void (String ip){
+	public void setIP(String ip){
 		this.endereço_IP = ip;
 	}
 

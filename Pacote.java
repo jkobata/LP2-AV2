@@ -2,10 +2,17 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class Pacote{
-	public int cabeçalho = 0;
-	public int terminator = 0;
-	public String dados;
-	public String destino;
+	private int cabecalho = 0;  //sujeito a alteração
+	private int terminador = 0; //sujeito a alteração
+	private String dados;
+	private String destino;
+
+	public Pacote(int cabecalho, int terminador, String dados, String destino){
+		this.cabecalho = cabecalho;
+		this.terminador = terminador;
+		this.destino = destino;
+		this.dados = dados;
+	}
 
 	public void setDados(String newDados){
 		this.dados = newDados;
@@ -13,17 +20,4 @@ public class Pacote{
 	public String getDados(){
 		return this.dados;
 	}
-	public void setDestino(String destino) {
-		this.destino = destino;
-	}
-	public String getDestino() {
-		return destino;
-	}
-	public void setCabeçalho(int cabeçalho) {
-		this.cabeçalho = cabeçalho;
-	}
-	public void setTerminador(int terminador) {
-		this.terminador = terminador;
-	}
-
 }
